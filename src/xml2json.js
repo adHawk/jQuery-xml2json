@@ -71,7 +71,7 @@
 					child = xml2jsonImpl(node, options);
 				}
 
-				name = node.nodeName;
+				name = node.localName;
 				if (result.hasOwnProperty(name)) {
 					// For repeating elements, cast/promote the node to array
 					var val = result[name];
